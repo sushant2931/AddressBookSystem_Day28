@@ -37,6 +37,9 @@ public class AddressBookSystem {
                         case 3:
                             addressBook.addPerson(person, IOService.CSV_IO);
                             break;
+                        case 4:
+                            addressBook.addPerson(person, IOService.JSON_IO);
+                            break;
                     }
 
                     break;
@@ -55,6 +58,9 @@ public class AddressBookSystem {
                             break;
                         case 3:
                             addressBook.readData(IOService.CSV_IO);
+                            break;
+                        case 4:
+                            addressBook.readData(IOService.JSON_IO);
                             break;
                     }
                     break;
